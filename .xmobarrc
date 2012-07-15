@@ -1,0 +1,19 @@
+Config { font = "xft:DejaVu Sans:size=10"
+        , bgColor = "#262626"
+        , fgColor = "#cccccc"
+        , position = TopW L 90
+        , lowerOnStart = True
+        , commands =    [ Run Weather "KOAK" ["-t"," <tempF>F","-L","55","-H","77","--normal","#5faf5f","--high","#af0000","--low","lightblue"] 36000
+                        , Run Cpu ["-t","cpu <total>%","-L","3","-H","50","--normal","#5fd700","--high","#af0000"] 10
+                        , Run Memory ["-t","mem <usedratio>%", "-L","20","-H","80","--normal","#5fd700","--high","#af0000","--low","#5faf00"] 10
+                        , Run Swap [] 10
+			-- , Run Network "eth1" ["-t", " ∇ <rx> : ∆ <tx> ","-L","0","-H","32","--normal","#5fd700","--high","#af0000"] 10
+			, Run Network "eth1" ["-t", " ▼ <rx> : ▲ <tx> ","-L","0","-H","32","--normal","#5fd700","--high","#af0000"] 10
+                        , Run Date "%l:%M%p" "date" 10
+			, Run BatteryP ["BAT0"] ["-t", "<acstatus> <left>% / <timeleft>", "-L", "10", "-H", "80", "-p", "3", "--", "-O", "<fc=green>⚡</fc>", "-o", "⚡", "-L", "-15", "-H", "-5", "-l", "red", "-m", "blue", "-h", "green"] 600
+                        , Run StdinReader
+                        ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        , template = "%StdinReader% }{ %eth1% <fc=#6f6f6f>|</fc> %cpu% <fc=#6f6f6f>|</fc> %memory% <fc=#6f6f6f>|</fc> %date% <fc=#6f6f6f>|</fc> %battery% <fc=#6f6f6f>|</fc> %KOAK% "
+        } 

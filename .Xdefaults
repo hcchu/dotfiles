@@ -1,0 +1,69 @@
+urxvt*background:     #121212
+!black
+urxvt*color0:           #353535
+urxvt*color8:           #666666
+!red
+urxvt*color1:           #AE4747
+urxvt*color9:           #EE6363
+!green
+urxvt*color2:           #556B2F
+urxvt*color10:          #9ACD32
+!brown/yellow
+urxvt*color3:           #DAA520
+urxvt*color11:          #FFC125
+!blue
+urxvt*color4:           #6F99B4
+urxvt*color12:          #7C96B0
+!magenta
+urxvt*color5:           #8B7B8B
+urxvt*color13:          #D8BFD8
+!cyan
+urxvt*color6:           #A7A15E
+urxvt*color14:          #F0E68C
+!white
+urxvt*color7:           #DDDDDD
+urxvt*color15:          #FFFFFF
+urxvt*foreground:       #DDDDDD
+
+urxvt*scrollBar:        true
+urxvt*scrollBar_right:  true
+urxvt*transpscrollbar:  true
+urxvt*saveLines:        32767
+urxvt*fading:           30
+urxvt*font:             xft:Inconsolata-10
+
+urxvt256c*background:   #121212
+!black
+urxvt256c*color0:               #353535
+urxvt256c*color8:               #666666
+!red
+urxvt256c*color1:               #AE4747
+urxvt256c*color9:               #EE6363
+!green
+urxvt256c*color2:               #556B2F
+urxvt256c*color10:              #9ACD32
+!brown/yellow
+urxvt256c*color3:               #DAA520
+urxvt256c*color11:              #FFC125
+!blue
+urxvt256c*color4:               #6F99B4
+urxvt256c*color12:              #7C96B0
+!magenta
+urxvt256c*color5:               #8B7B8B
+urxvt256c*color13:              #D8BFD8
+!cyan
+urxvt256c*color6:               #A7A15E
+urxvt256c*color14:              #F0E68C
+!white
+urxvt256c*color7:               #DDDDDD
+urxvt256c*color15:              #FFFFFF
+urxvt256c*foreground:   #DDDDDD
+
+urxvt256c*scrollBar:    true
+urxvt256c*scrollBar_right:      true
+urxvt256c*transpscrollbar:      true
+urxvt256c*saveLines:    32767
+!urxvt256c*fading:               30
+urxvt256c*font:         xft:Inconsolata-10
+
+Xcursor.theme:	Adwaita
